@@ -1,9 +1,5 @@
-//your JS code here. If required.
-
-function domLoaded() {
-	let str = document.createElement('p');
-	str.textContent = "Dom load Success";
-	document.body.appendChild(str);
-}
-
-document.addEventListener("DOMContentLoaded", domLoaded);
+document.addEventListener("DOMContentLoaded", function () {
+	const message = document.createElement("p");
+	message.textContent = "DOM load success";
+	document.body.appendChild(message);
+});
